@@ -1,0 +1,126 @@
+@header-left-color:#51b2ff;
+@header-right-color:#303036;
+/*About and Experience*/
+@section1-block:#f8f8f8;
+/*Recent Work*/
+@section2-block:#28282e;
+@section21-block:#222227;
+/*Feature*/
+@section3-block:#f1f1f1;
+/*Recent Blog and Footer*/
+@footer-block:#e7eaed;
+/*Menu and Home*/
+.body{
+  display: block;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+
+}
+.header-block{
+  background: url("../img/header-img.jpg") no-repeat center top;
+  width: 100%;
+  &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:700px;
+    margin-top: 0px;
+    &_menu{
+      display: flex;
+      justify-content: center;
+      height: 60px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: "Agency FB";
+    }
+    ul{
+      padding-left:0px;
+    }
+    li {
+      display: inline-block;
+      padding: 0 8px;
+    }
+    &_main{
+      display: flex;
+      justify-content: center;
+      height: 638px;
+      &-aside{
+        background:@header-left-color;
+        width: 554px;
+        opacity: 0.5;
+      }
+      &-content{
+        background:@header-right-color;
+        width: 554px;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+h1,h2,hr{
+  color: white;
+  margin-left: 80px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family:sans-serif ;
+}
+h1{
+  margin-top: 200px;
+}
+.animation:hover {
+  text-decoration: underline;
+  color:yellow;
+  text-underline-style: dash;
+}
+/*About and Experience*/
+.section-block {
+  background: url("../img/section-img.png") no-repeat center top;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+
+  &__container{
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    &_main{
+      display: flex;
+
+
+      &-left{
+        display: flex;
+        align-items: flex-end;
+        width: 554px;
+      }
+      &-right{
+        display: inline-block;
+        width: 500px;
+      }
+    }
+  }
+}
+p{
+  margin-left: 80px;
+  margin-top: 30px;
+  color: white;
+  width: 300px;
+}
+.img{
+  height: 350px;
+  margin: 150px 0 20px 0;
+}
+.clients{
+  height: 50px;
+}
+h3{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family:sans-serif ;
+  margin-top: 13px;
+  margin-bottom: 0px;
+}
