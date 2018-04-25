@@ -9,13 +9,13 @@
 @section3-block:#f1f1f1;
 /*Recent Blog and Footer*/
 @footer-block:#e7eaed;
-/*Menu and Home*/
+/*Font*/
+@my-font:"Agency FB";
 .body{
   display: block;
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
-
 }
 .header-block{
   background: url("../img/header-img.jpg") no-repeat center top;
@@ -35,8 +35,8 @@
       color: white;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 18px;
-      font-family: "Agency FB";
+      font-size: 19px;
+      font-family: @my-font;
     }
     ul{
       padding-left:0px;
@@ -70,7 +70,7 @@ h1,h2,hr{
   font-family:sans-serif ;
 }
 h1{
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .animation:hover {
   text-decoration: underline;
@@ -104,23 +104,92 @@ h1{
     }
   }
 }
-p{
+.section-block-text{
   margin-left: 80px;
   margin-top: 30px;
   color: white;
   width: 300px;
+  font-family:@my-font;
+  font-size: 20px;
 }
 .img{
   height: 350px;
   margin: 150px 0 20px 0;
 }
 .clients{
-  height: 50px;
+  height: 65px;
+  display: inline-block;
+  background: #f8f8f8;
+  width: 150px;
 }
 h3{
   text-transform: uppercase;
   font-size: 20px;
-  font-family:sans-serif ;
+  font-family:@my-font;
   margin-top: 13px;
   margin-bottom: 0px;
+}
+.section-block-about{
+  margin: 0px auto;
+}
+.button{
+  height: 40px;
+  width: 160px;
+  background:#363636;
+  color: white;
+  border: 0px;
+  margin-left: 140px;
+}
+.section-block1{
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+
+.section-block__container1{
+  display: flex;
+&_main1{
+  display: flex;
+  justify-content: center;
+  &-left1{
+    display: inline-block;
+    width: 548px;
+  }
+  &-top1{
+    width: 250px;
+  }
+  &-right1{
+    width: 250px;
+  }
+  .icon {
+    width: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+  p{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family:@my-font;
+    text-align: center
+  }
+}
+}
+}
+.exp{
+  color:black;
+}
+.icon:hover {
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
+    transition: 0.2s ease-in;
+  }
+/*Bord Recent Work*/
+.section-block2{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
 }
