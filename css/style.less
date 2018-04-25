@@ -186,10 +186,54 @@ h3{
     transform: scale(1.6);
     transition: 0.2s ease-in;
   }
-/*Bord Recent Work*/
-.section-block2{
+/*Feature*/
+.section-block3 {
+  background: @section3-block;
+
+  &__container {
     display: flex;
-    width: 100%;
-    height: 600px;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    background: @section3-block;
+  }
+
+  &_module {
+    width: 560px;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+     }
+}
+.block3{
+  text-align: center;
+  color:black;
+  font-family:@my-font;
+  font-size: 20px;
+}
+.text3{
+  font-size: 30px;
+  font-family:@my-font;
+  text-align: center;
+  color:black;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+.button {
+  color: black;
+  border-radius: 4px;
+  display: block;
+  width: 210px;
+  height: 30px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  &:hover {
+    background: yellow;
+  }
 }
